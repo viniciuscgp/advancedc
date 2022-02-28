@@ -3,7 +3,7 @@ Repositório de testes de C (Ansi 99)
 
 ## Para compilar no Linux
 ~~~~
-gcc *.c -o advancedc
+gcc *.c -o advancedc -lm -lpthread
 ~~~~
 ## Para compilar no Windows
 O projeto foi criado no [Netbeans 8!](https://netbeans.apache.org/download/index.html)
