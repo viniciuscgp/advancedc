@@ -15,7 +15,7 @@ void TypeQualifiesTests(void) {
     }
 
     typedef const int zip;
-    const zip q = 9; /* const is idepontent*/
+    zip q = 9; /* const is idepontent*/
     lf();
     dstr("q Value: ");
     dint(q);

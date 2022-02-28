@@ -31,7 +31,7 @@ void BitmasksTests() {
         printf("\t99-Voltar\n");
         lf();
         printf("\tOpcao:");
-        scanf("%2d", &op);
+        scanf("%2hhi", &op);
 
         switch (op) {
             case 1:

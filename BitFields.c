@@ -50,8 +50,8 @@ void BitfieldsTest() {
     printf("            %s\n", REGUA32C);
     printf("            %s\n", REGUA32);
     printf("pack_data = %s\n", padzero(ToStrBin(pack_data.value), 32));
-    printf("            ^                 ^       ^  ^Filler\n");
-    printf("            |index            |type   | f1-f3\n");
+    printf("            ^                 ^       ^  ^ Filler\n");
+    printf("            | index           | type  | F1-F3\n");
 
     lf();
     lf();

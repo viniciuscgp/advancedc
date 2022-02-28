@@ -39,6 +39,13 @@ void sub(char *str) {
     lf();
 }
 
+void dash() {
+    for (int i = 0; i < 60; i++) {
+        printf("%c", '_');
+    }
+    lf();
+}
+
 void limpalf() {
     while (getchar() != '\n');
 }
@@ -57,5 +64,17 @@ char *padzero(char *str, int size) {
     return str;
 }
 
+void dumpmem(char *pointer, int colperline, int max) {
+    int i = 0;
+    int col = 0;
+    while (i < max) {
+        printf("%03d ", (int) pointer[i]);
+        if (col++ > colperline) {
+            lf();
+            col = 0;
+        }
+        i++;
+    }
+}
 
 

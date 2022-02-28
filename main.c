@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   main.c
  * Author: viniciuscgp
  *
@@ -20,8 +20,10 @@
 #include "TypeQualifiers.h"
 #include "Bitmasks.h"
 #include "BitFields.h"
+#include "Threads.h"
 
 int main(int argc, char** argv) {
+    setvbuf(stdout, NULL, _IONBF, 0);
 
     setlocale(LC_ALL, "Portuguese");
     char *locale = setlocale(LC_ALL, NULL);
@@ -43,11 +45,13 @@ int main(int argc, char** argv) {
         printf("\t06-String Functions Tests\n");
         printf("\t07-Bitmasks Tests\n");
         printf("\t08-Bitfields Tests\n");
+        printf("\t09-Threads Tests\n");
         printf("\t20-Miscelaneous Tests\n");
         printf("\t99-Sair\n");
         int op = 0;
         printf("\n\tOpcoes: ");
-        scanf("%d", &op);
+        //scanf("%d", &op);
+        op = 9;
 
         switch (op) {
             case 1: TypeQualifiesTests();
@@ -65,6 +69,8 @@ int main(int argc, char** argv) {
             case 7: BitmasksTests();
                 break;
             case 8: BitfieldsTest();
+                break;
+            case 9: ThreadsTests();
                 break;
             case 20: Testes();
                 break;

@@ -138,7 +138,7 @@ short BinaryToInt2(long long num) {
     while (num != 0) {
         dig = num % 10;
         num =  (long long) num / 10;
-        ret = ret + (pow(2, i) * dig);
+        ret = ret + (short) (pow(2, i) * dig);
         i++;
     }
     return ret;

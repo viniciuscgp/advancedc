@@ -19,7 +19,7 @@
 #define REGUA32C "      24      16       8       0"
 #define REGUA32  "7654321|7654321|7654321|76543210"
 
-#ifdef _WIN32_WINNT
+#ifdef _WIN32
 #define CLS "cls"
 #define PAUSE "pause"
 #else
@@ -35,8 +35,10 @@ extern "C" {
     void lf(void);
     void title(char *str);
     void sub(char *str);
+    void dash();
     void limpalf();
     char *padzero(char *str, int size);
+    void dumpmem(char *pointer, int colperline, int max);
 
 #ifdef __cplusplus
 }
